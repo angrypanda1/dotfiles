@@ -1,0 +1,54 @@
+<eww>
+  <definitions>
+    <def name="hub">
+        <box orientation="h" space-evenly="true" class="hub">
+            <locale/>
+            <status/>
+        </box>
+    </def>
+
+
+    <def name="locale">
+      <box style="padding: 25px"
+          orientation="v" space-evenly="false" valign="center" spacing="10" halign="center">
+            <box orientation="h" class="time">
+                    <box class="hour" style="font-size: 4em; color: #fb4934;">{{hour}}</box>
+                    <box class="dot-dot" style="font-size: 4em; color: #83a598;">:</box>
+                    <box class="minute" style="font-size: 4em; color: #8ec07c;">{{minute}}</box>
+                </box>
+<box orientation="h" space-evenly = "false" valign="center" spacing = "2" halign = "center" class="time">
+                    <box class="hour" style="font-size: 1.5em; color: #fb4934; ">{{day}}</box>
+                    <box class="dot-dot" style="font-size: 1.5em; color: #83a598;">{{month}}</box>
+                    <box class="minute" style="font-size: 1.5em; color: #8ec07c;">{{date}}</box>
+            </box>
+      </box>
+    </def>
+
+    <def name="status">
+      <box orientation="v" spacing="15" valign="fill" class="widget">
+        <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
+          <label text="﫛" style="color: #fabd2f;"></label>
+          <scale width="250" class="ram" active="false" max="100" value="{{volume}}"/>
+        </box>
+        <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
+          <label text="" style="color: #8ec07c;"></label>
+          <scale width="250" class="gpu" active="false" max="100" value="{{battery}}"/>
+        </box>
+        <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
+          <label text="" style="color: #458588;"></label>
+          <scale width="250" class="cpu" active="false" max="60" value="{{brightness}}"/>
+        </box>
+      </box>
+    </def>
+  </definitions>
+  <variables>
+       <script-var name="minute" interval="10s">date "+%M"</script-var>
+       <script-var name="hour" interval="5m">date "+%H"</script-var>
+       <script-var name="day" interval="5m">date "+%A, "</script-var>
+       <script-var name="month" interval="5m">date "+%b "</script-var>
+       <script-var name="date" interval="5m">date "+%d "</script-var>
+    <script-var interval="1s" name="volume">pamixer --get-volume</script-var>
+    <script-var interval="10s" name="battery">cat /sys/class/power_supply/BAT0/capacity</script-var>
+    <script-var interval="1s" name="brightness">echo "scale=0 ; $(brightnessctl g) / $(brightnessctl m)*100" | bc</script-var>
+  </variables>
+</eww>

@@ -1,0 +1,14 @@
+eww windows | grep \*
+
+if [ $? = 1 ]; then
+
+    eww reload
+    eww open-many hub
+    sleep infinity
+
+fi
+if [ $? = 0 ]; then
+
+    eww close-all
+
+fi

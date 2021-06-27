@@ -1,0 +1,61 @@
+configuration {
+  drun-display-format: "{name}";
+  font: "Iosevka Nerd Font Medium 12";
+  modi: "drun,run,window";
+  columns: 1;
+  fullscreen: false;
+  sidebar-mode: false;
+  //position: 0;
+  disable-history: false;
+}
+
+* {
+  bg: #1d2021;
+  bg-alt: #282828;
+  fg: #fabd2f;
+  fg-alt: #ebdbb2;
+
+  background-color: @bg;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  width: 20%;
+}
+
+element, entry, prompt {
+  padding: 10;
+  text-color: @fg-alt;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+scrollbar {
+  background-color: @bg-alt;
+  handle-color: @fg;
+  padding: 3;
+  margin: 0 0 0 10;
+}
+
+window {
+  border: 0;
+  border-color: #282828;
+  padding: 10;
+  transparency: "real";
+}
