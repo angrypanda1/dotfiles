@@ -3,15 +3,22 @@ contain are defined. -->
 
 <eww>
   <includes>
-    <file path="./modules/eww-hub.xml"/>
+      <file path="./modules/eww-hub.xml"/>
+      <file path="./modules/eww-music.xml"/>
   </includes>
 
   <windows>
-    <window name="hub" stacking="fg">
+   <window name="hub" stacking="fg">
       <geometry anchor="top center" x="0" y="45" width="33%" height="0"/> <!--Specifies geometry-->
       <widget>
         <hub/> <!--This is the def we created earlier-->
       </widget>
-    </window>
+   </window>
+   <window name="music" stacking="fg">
+	  <geometry anchor="bottom center" y="-20" width="33%" height="0"/>
+	  <widget>
+		<music/>
+	  </widget>
+   </window>
   </windows>
 </eww>

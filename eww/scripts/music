@@ -1,0 +1,1 @@
+playerctl metadata | grep artUrl | sed "s/open\.spotify\.com/i.scdn.co/" | awk '{ print $NF }'

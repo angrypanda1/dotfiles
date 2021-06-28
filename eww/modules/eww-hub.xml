@@ -1,5 +1,5 @@
 <eww>
-  <definitions>
+    <definitions>
     <def name="hub">
         <box orientation="h" space-evenly="true" class="hub">
             <locale/>
@@ -16,7 +16,7 @@
                     <box class="dot-dot" style="font-size: 4em; color: #83a598;">:</box>
                     <box class="minute" style="font-size: 4em; color: #8ec07c;">{{minute}}</box>
                 </box>
-<box orientation="h" space-evenly = "false" valign="center" spacing = "2" halign = "center" class="time">
+<box orientation="h" space-evenly = "false" valign="center" halign = "center" class="time">
                     <box class="hour" style="font-size: 1.5em; color: #fb4934; ">{{day}}</box>
                     <box class="dot-dot" style="font-size: 1.5em; color: #83a598;">{{month}}</box>
                     <box class="minute" style="font-size: 1.5em; color: #8ec07c;">{{date}}</box>
