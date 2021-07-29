@@ -27,15 +27,15 @@
     <def name="status">
       <box orientation="v" spacing="15" valign="fill" class="widget">
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="﫛" style="color: #fabd2f;"></label>
+          <label text="﫛" style="color:#595959;"></label>
           <scale width="250" class="ram" active="false" max="100" value="{{volume}}"/>
         </box>
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="" style="color: #8ec07c;"></label>
+          <label text="" style="color: #595959;"></label>
           <scale width="250" class="gpu" active="false" max="100" value="{{battery}}"/>
         </box>
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="" style="color: #458588;"></label>
+          <label text="" style="color: #595959;"></label>
           <scale width="250" class="cpu" active="false" max="60" value="{{brightness}}"/>
         </box>
       </box>
@@ -47,7 +47,7 @@
        <script-var name="day" interval="5m">date "+%A, "</script-var>
        <script-var name="month" interval="5m">date "+%b "</script-var>
        <script-var name="date" interval="5m">date "+%d "</script-var>
-    <script-var interval="1s" name="volume">pamixer --get-volume</script-var>
+    <script-var interval="100ms" name="volume">pamixer --get-volume</script-var>
     <script-var interval="10s" name="battery">cat /sys/class/power_supply/BAT0/capacity</script-var>
     <script-var interval="1s" name="brightness">echo "scale=0 ; $(brightnessctl g) / $(brightnessctl m)*100" | bc</script-var>
   </variables>
