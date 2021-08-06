@@ -1,0 +1,14 @@
+<eww>
+<definitions>
+<def name="wifi">
+			<box class="genwin" orientation="h" space-evenly="false" vexpand="false" hexpand="false">
+                <box class="wifi" vexpand="false" hexpand="false" style="background-image: url('{{pic}}');">
+				</box>
+			</box>
+        </def>
+    </definitions>
+<variables>
+    <script-var name="pic" interval="1s">~/.config/eww/scripts/wifi</script-var>
+</variables>
+
+</eww>

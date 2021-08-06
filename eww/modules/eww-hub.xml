@@ -11,31 +11,25 @@
     <def name="locale">
       <box style="padding: 25px"
           orientation="v" space-evenly="false" valign="center" spacing="10" halign="center">
-            <box orientation="h" class="time">
-                    <box class="hour" style="font-size: 4em; color: #fb4934;">{{hour}}</box>
-                    <box class="dot-dot" style="font-size: 4em; color: #83a598;">:</box>
-                    <box class="minute" style="font-size: 4em; color: #8ec07c;">{{minute}}</box>
+            <box orientation="h" class="time" space-evenly="false" spacing="10">
+                    <box class="hour" style="color: #c49ea0;">{{hour}}</box>
+                    <box class="minute" style="color: #9ec49f;">{{minute}}</box>
                 </box>
-<box orientation="h" space-evenly = "false" valign="center" halign = "center" class="time">
-                    <box class="hour" style="font-size: 1.5em; color: #fb4934; ">{{day}}</box>
-                    <box class="dot-dot" style="font-size: 1.5em; color: #83a598;">{{month}}</box>
-                    <box class="minute" style="font-size: 1.5em; color: #8ec07c;">{{date}}</box>
-            </box>
       </box>
     </def>
 
     <def name="status">
       <box orientation="v" spacing="15" valign="fill" class="widget">
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="﫛" style="color:#595959;"></label>
-          <scale width="250" class="ram" active="false" max="100" value="{{volume}}"/>
+          <label text="" style="color:#c4c19e;"></label>
+          <scale onscroll="pamixer -i 5" width="250" class="ram" active="false" max="100" value="{{volume}}"/>
         </box>
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="" style="color: #595959;"></label>
+          <label text="" style="color: #9ec49f;"></label>
           <scale width="250" class="gpu" active="false" max="100" value="{{battery}}"/>
         </box>
         <box class="status" orientation="h" space-evenly="false" spacing="25" halign="center">
-          <label text="" style="color: #595959;"></label>
+          <label text="" style="color: #c49ea0;"></label>
           <scale width="250" class="cpu" active="false" max="60" value="{{brightness}}"/>
         </box>
       </box>

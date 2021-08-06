@@ -3,7 +3,7 @@ title = Dunst
 class = Dunst
 monitor = 0
 follow = mouse
-geometry = "350x6-19+52"
+geometry = "350x6-19+19"
 indicate_hidden = yes
 shrink = yes
 
@@ -18,14 +18,14 @@ separator_height = 2
 padding = 8
 horizontal_padding = 11
 frame_width = 6
-frame_color = "#1d2021"
+frame_color = "#0f0f0f"
 separator_color = "#00000000"
 
-font = Iosevka Nerd Font 10
+font = Iosevka 10
 
 line_height = 0
 markup = full
-format = "<span size='large' font_desc='SF Pro Display,Iosevka Nerd Font 9' weight='bold' foreground='#ebdbb2'>%s</span>\n%b"
+format = "<span size='large' font_desc='Iosevka 9' weight='bold' foreground='#f9f9f9'>%s</span>\n%b"
 alignment = center
 vertical_alignment = center
 
@@ -46,7 +46,7 @@ max_icon_size = 80
 
 icon_path = /usr/share/icons/Papirus-Dark-Custom/48x48/actions/:/usr/share/icons/Papirus-Dark-Custom/48x48/apps/:/usr/share/icons/Papirus-Dark-Custom/48x48/devices/:/usr/share/icons/Papirus-Dark-Custom/48x48/emblems/:/usr/share/icons/Papirus-Dark-Custom/48x48/emotes/:/usr/share/icons/Papirus-Dark-Custom/48x48/mimetypes/:/usr/share/icons/Papirus-Dark-Custom/48x48/places/:/usr/share/icons/Papirus-Dark-Custom/48x48/status/
 
-browser = firefox
+browser = brave-bin
 
 mouse_left_click = close_current
 mouse_middle_click = do_action
@@ -60,18 +60,18 @@ context = ctrl+shift+period
 
 [urgency_low]
 timeout = 3
-background = "#1d2021"
+background = "#0f0f0f"
 foreground = "#ebdbb2"
-highlight = "#d3869b"
+highlight = "#f48ee8"
 
 [urgency_normal]
 timeout = 6
-background = "#1d2021"
+background = "#0f0f0f"
 foreground = "#ebdbb2"
-highlight = "#d3869b"
+highlight = "#f48ee8"
 
 [urgency_critical]
 timeout = 0
-background = "#1d2021"
+background = "#0f0f0f"
 foreground = "#ebdbb2"
-highlight = "#d3869b"
+highlight = "#f48ee8"

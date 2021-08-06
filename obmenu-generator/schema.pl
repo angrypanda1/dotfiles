@@ -31,31 +31,21 @@ our $SCHEMA = [
     {sep => "QUICK START"},
 
     #         COMMAND                                                     LABEL                     ICON
-    {beg  => ["Launch Apps",                                                                        "$ENV{HOME}/.icons/crayon/solo_launcher.png"]},
-    {cat  => ["utility",                                                  "Accessories",            "applications-utilities"]},
-    {cat  => ["development",                                              "Development",            "applications-development"]},
-    {cat  => ["education",                                                "Education",              "applications-science"]},
-    {cat  => ["game",                                                     "Games",                  "applications-games"]},
-    {cat  => ["graphics",                                                 "Graphics",               "applications-graphics"]},
-    {cat  => ["audiovideo",                                               "Multimedia",             "applications-multimedia"]},
-    {cat  => ["network",                                                  "Network",                "applications-internet"]},
-    {cat  => ["office",                                                   "Office",                 "applications-office"]},
-    {cat  => ["other",                                                    "Other",                  "applications-other"]},
-    {cat  => ["settings",                                                 "Settings",               "applications-accessories"]},
-    {cat  => ["system",                                                   "System",                 "applications-system"]},
-    {end  => undef},
-    
-    {sep  => undef},
-    
     {item => ["~/.scripts/default-apps/launch terminal",                  "Open Terminal",          "$ENV{HOME}/.icons/crayon/termux.png"]},
+
+    {sep  => undef},
 
     {sep  => undef},
 
     {item => ["~/.scripts/default-apps/launch filemanager",               "Open File Manager",      "$ENV{HOME}/.icons/crayon/file_manager.png"]},
     
     {sep  => undef},
+
+    {sep  => undef},
     
     {beg  => ["Screenshot",                                                                         "$ENV{HOME}/.icons/crayon/screenshot_capture.png"]},
+
+    {sep  => undef},
 
     {sep  => undef},
 
@@ -63,7 +53,11 @@ our $SCHEMA = [
 
     {sep  => undef},
 
+    {sep  => undef},
+
     {item => ["~/.scripts/shot-timer",                                    "After ..s",              "$ENV{HOME}/.icons/crayon/screenshot_capture.png"]},
+
+    {sep  => undef},
 
     {sep  => undef},
 
@@ -71,8 +65,12 @@ our $SCHEMA = [
     {end  => undef},
     
     {sep  => undef},
+
+    {sep  => undef},
     
     {pipe => ["~/.config/openbox/pipe-menu/ob-randr.py",                  "Monitor Settings",       "$ENV{HOME}/.icons/crayon/ps4_second_screen.png"]},
+
+    {sep  => undef},
 
     {sep  => undef},
 
@@ -80,41 +78,46 @@ our $SCHEMA = [
     
     {sep  => undef},
     
+    {sep  => undef},
     {sep => "SESSIONS"},
     
     {beg  => ["Theme Styling",                                                                      "$ENV{HOME}/.icons/crayon/themes.png"]},
 
     {sep  => undef},
 
-    {item => ["~/.scripts/default-apps/launch terminal -e ~/.config/openbox/visual-mode/wally","Change Wallpaper","$ENV{HOME}/.icons/gladient/wally.png"]},
 
     {sep  => undef},
-    {item => ["~/.config/openbox/visual-mode/termody",                    "Reverse Terminal Visual","$ENV{HOME}/.icons/gladient/term.png"]},
-    {sep  => undef},
-    {item => ["~/.scripts/default-apps/launch terminal -e ~/.config/openbox/visual-mode/ob-button","Change Button Style","$ENV{HOME}/.icons/gladient/obt-c.png"]},
+
+    {item => ["~/.scripts/default-apps/launch terminal -e ~/.config/openbox/visual-mode/wally","Change Wallpaper","$ENV{HOME}/.icons/crayon/resplash.png"]},
 
     {sep  => undef},
-    {item => ["~/.config/openbox/visual-mode/ob-button swap",             "Swap Button [L/R]",      "$ENV{HOME}/.icons/gladient/obt-s.png"]},
-    {sep  => undef},
-    {item => ["~/.config/openbox/visual-mode/mode-toggle minimal",        "Toggle Minimal Mode",    "$ENV{HOME}/.icons/gladient/minimal.png"]},
 
     {sep  => undef},
-    {item => ["~/.config/openbox/visual-mode/mode-toggle",                "Switch Visual Mode",     "$ENV{HOME}/.icons/gladient/visual.png"]},
+
+    {item => ["~/.scripts/default-apps/launch terminal -e ~/.config/openbox/visual-mode/ob-button","Change Button Style","$ENV{HOME}/.icons/crayon/button.png"]},
 
     {sep  => undef},
+
+    {sep  => undef},
+
     {end  => undef},
     
     {sep  => undef},
     
-    {item => ["~/.config/openbox/visual-mode/mode-toggle just_ui",        "Restart UI",             "$ENV{HOME}/.icons/gladient/re-ui.png"]},
+    {sep  => undef},
+    {item => ["~/.config/openbox/visual-mode/mode-toggle just_ui",        "Restart UI",             "$ENV{HOME}/.icons/crayon/restart.png"]},
     
     {sep  => undef},
     
-    {item => ["~/.scripts/default-apps/launch lockscreen",                "Lockscreen",             "$ENV{HOME}/.icons/crayon/lock.png"]},
+    {sep  => undef},
+    {item => ["~/.scripts/default-apps/launch lockscreen",                "Lockscreen",             "$ENV{HOME}/.icons/crayon/padlock.png"]},
 
     {sep  => undef},
     
+    {sep  => undef},
     {exit => ["Exit Openbox",                                                                       "$ENV{HOME}/.icons/crayon/stubborn_trojan_killer.png"]},
+
+    {sep  => undef},
 
     {sep  => undef},
 ]

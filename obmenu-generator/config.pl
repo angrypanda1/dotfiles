@@ -47,7 +47,7 @@
 =cut
 
 our $CONFIG = {
-  "editor"              => "geany",
+  "editor"              => "nvim",
   "force_icon_size"     => 0,
   "generic_fallback"    => 0,
   "gtk_rc_filename"     => "$ENV{HOME}/.gtkrc-2.0",
@@ -69,7 +69,7 @@ our $CONFIG = {
                            },
   "locale_support"      => 1,
   "missing_icon"        => "gtk-missing-image",
-  "terminal"            => "urxvt",
+  "terminal"            => "alacritty",
   "use_gtk3"            => 0,
   "VERSION"             => 0.89,
 }

@@ -2,31 +2,50 @@
   all: unset; //Unsets everything so you can style everything from scratch
 }
 .album_art {
-	background-size: 240px;
-	min-height: 240px;
-	min-width: 240px;
-	margin: 20px;
-	border-radius: 5px;
-  box-shadow: 3px 2px 4px #000000;
+	background-size: 234px;
+	min-height: 234px;
+	min-width: 234px;
+	margin: 0px;
+}
+.workspace {
+	background-size: 112px;
+	min-height: 112px;
+	min-width: 112px;
+	margin: 0px;
+    font-size: 2em;
+    color: #c4c19e;
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+}
+.nowplaying {
+    min-height: 90px;
+    min-width: 300px;
+}
+.wifi {
+    background-size: 50px;
+       background-repeat: no-repeat;
+  background-position: center; 
+	min-height: 112px;
+	min-width: 112px;
+	margin: 0px;
+}
+.time {
+    font-size: 8em;
+    font-weight: bold;
+    font-family: "JetBrains Mono"
 }
 .genwin {
-	background-color: #1d2021;
+	background-color: #0f0f0f;
 }
 .song {
 	color: #8FBCBB;
 	font-size : 24px;
-	font-weight : 900;
-	margin : 40px 0px 0px 0px;
-    text-shadow: 3px 2px 4px #000000;
+    padding: 0px 20px;
 }
-
 .artist {
 	color: #EBCB8B;
 	font-size : 20px;
-	font-weight : bold;
-	margin : 0px 0px 15px 0px;
-    text-shadow: 3px 2px 4px #000000;
-
+    padding: 0px 20px;
 }
 @keyframes fadeIn {
   from {opacity: 0;}
@@ -41,8 +60,7 @@
 //Global Styles
 window {
 	color: #b1af9e;
-  font-family: "JetBrains Mono";
-  font-weight: 900;
+  font-family: "SF Pro Display:style=Light", "Font Awesome 5 Pro";
 }
 trough {
   all: unset;
@@ -76,7 +94,7 @@ calendar:selected {
 	color: #dcbb8c;
 }
 .widget {
-	background-color: #1d2021;
+	background-color: #0f0f0f;
   border-radius: 0px;
   padding: 35px;
   margin: 5px;
@@ -94,7 +112,7 @@ calendar:selected {
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
   border: 1px solid #282828;
-	background-color: #1d2021;
+	background-color: #0f0f0f;
   // box-shadow: 0px 0px 5px 0.2px  rgba(0,0,0,0.3);
 }
 .muted, .muted progress trough highlight {
@@ -102,16 +120,16 @@ calendar:selected {
   background-color: transparent;
 }
 .hub {
-  background-color: #1d2021;
+  background-color: #0f0f0f;
   animation-duration: 0.1s;
-  border: 2px solid #1d2021;
+  border: 2px solid #0f0f0f;
   border-radius: 0px;
 }
 .notification {
   font-family: "JetBrains Mono";
   font-size: 11px;
   border-radius: 5px;
-	background-color: #1d2021;
+	background-color: #0f0f0f;
   border: 1px solid #282828;
 }
 .notif {
@@ -186,22 +204,32 @@ calendar:selected {
  * System status
 */
 .status scale trough {
-  padding: 2px;
-  opacity: 0.5;
+  padding: 0px;
+  opacity: 1;
+  margin: 10px 0px;
   min-height: 20px;
   box-shadow: 3px 2px 4px #000000;
 }
 .status label {
-  font-size: 40px;
+  font-size: 25px;
 }
 .ram trough highlight {
-  background-color: #606778;
+  background-color: #c4c19e;
+}
+.ram trough {
+    background-color: #614910;
 }
 .cpu trough highlight {
-  background-color: #606778;
+  background-color: #c49ea0;
+}
+.cpu trough {
+    background-color: #5c1710;
 }
 .gpu trough highlight {
-  background-color: #606778;
+  background-color: #9ec49f;
+}
+.gpu trough {
+    background-color: #30422a;
 }
 .layout {
   border-radius: 5px;
@@ -229,7 +257,7 @@ calendar:selected {
  * Config for eww bar
 */
 .bar {
-  background-color: #1d2021;
+  background-color: #0f0f0f;
   font-size: 11px;
   padding: 0px 15px 0px 15px;
   margin-bottom: 5px;

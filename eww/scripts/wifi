@@ -1,0 +1,5 @@
+if [[ $(ping google.com | head -c1 | wc -c) -ne 0 ]]; then
+    echo "/home/svadrut/.config/eww/scripts/pictures/wifi.png"
+else
+    echo "/home/svadrut/.config/eww/scripts/pictures/cancel.png"
+fi

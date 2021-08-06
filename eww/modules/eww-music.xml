@@ -4,16 +4,10 @@
 			<box class="genwin" orientation="h" space-evenly="false" vexpand="false" hexpand="false">
                 <box class="album_art" vexpand="false" hexpand="false" style="background-image: url('{{art}}');">
 				</box>
-				<box orientation="v" space-evenly="true" valign="center" halign="center" vexpand="false" hexpand="true">
-					<label halign="center" class="song" wrap="true" limit-width="20" text="{{SONG}}"/>
-					<label halign="center" class="artist" wrap="true" limit-width="15" text="{{ARTIST}}"/>
-				</box>
 			</box>
         </def>
     </definitions>
 <variables>
-    <script-var name="SONG" interval="1s">playerctl metadata title</script-var>
-    <script-var name="ARTIST" interval="1s">playerctl metadata artist</script-var>
     <script-var name="art" interval="2s">~/.config/eww/scripts/echoSongArt</script-var>
 </variables>
 

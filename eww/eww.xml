@@ -5,19 +5,33 @@ contain are defined. -->
   <includes>
       <file path="./modules/eww-hub.xml"/>
       <file path="./modules/eww-music.xml"/>
+      <file path="./modules/eww-workspace.xml"/>
+      <file path="./modules/eww-wifi.xml"/>
   </includes>
 
   <windows>
    <window name="hub" stacking="fg">
-      <geometry anchor="top center" x="0" y="45" width="33%" height="0"/> <!--Specifies geometry-->
+      <geometry anchor="top center" x="0" y="10" width="33%" height="0"/> <!--Specifies geometry-->
       <widget>
         <hub/> <!--This is the def we created earlier-->
       </widget>
    </window>
    <window name="music" stacking="fg">
-	  <geometry anchor="bottom center" y="-20" width="33%" height="0"/>
+	  <geometry anchor="top center" x="-27%" y="10" width="234px" height="234px"/>
 	  <widget>
 		<music/>
+	  </widget>
+  </window>
+<window name="workspace" stacking="fg">
+	  <geometry anchor="top center" x="24%" y="10"/>
+	  <widget>
+		<workspace/>
+	  </widget>
+  </window>
+<window name="wifi" stacking="fg">
+	  <geometry anchor="top center" x="24%" y="130"/>
+	  <widget>
+		<wifi/>
 	  </widget>
    </window>
   </windows>

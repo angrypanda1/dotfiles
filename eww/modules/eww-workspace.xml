@@ -1,0 +1,14 @@
+<eww>
+<definitions>
+<def name="workspace">
+			<box class="genwin" orientation="h" space-evenly="false" vexpand="false" hexpand="false">
+<box class="workspace" vexpand="false" hexpand="false">{{workspace}}</box>
+			</box>
+        </def>
+    </definitions>
+<variables>
+    <script-var name="workspace" interval="100ms">/home/svadrut/.config/eww/scripts/getWorkspace.sh</script-var>
+</variables>
+
+</eww>
+
